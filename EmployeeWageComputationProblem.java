@@ -6,10 +6,18 @@ public class EmployeeWageComputationProblem {
         int days=0,hours=0;
         while (days<20 && hours<100)
         {
-            double p=Math.random();
-            if(p<0.3){
-                totalWage+=fullDayHour*wagePerHour;
-                hours+=fullDayHour;
+            int p=(int)(Math.random()*3);
+            switch (p){
+                case 0:
+                {
+                    totalWage+=fullDayHour*wagePerHour;
+                    hours+=fullDayHour;
+                }
+                case 1:
+                {
+                    totalWage+=pratTimeHour*wagePerHour;
+                    hours+=fullDayHour;
+                }
             }
 
             days++;
