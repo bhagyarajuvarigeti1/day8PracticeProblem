@@ -11,10 +11,7 @@ public class EmployeeWageComputationProblem {
                 totalWage+=fullDayHour*wagePerHour;
                 hours+=fullDayHour;
             }
-            else if (p>0.3 && p<0.6){
-                totalWage+=pratTimeHour*wagePerHour;
-                hours+=fullDayHour;
-            }
+
             days++;
             System.out.println(totalWage);
         }
