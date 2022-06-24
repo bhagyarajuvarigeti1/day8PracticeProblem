@@ -19,6 +19,10 @@ public class EmployeeWageComputationProblem {
                     hours+=fullDayHour;
                 }
             }
+            if(hours>92){
+                totalWage+=pratTimeHour*wagePerHour;
+                hours=100;
+            }
 
             days++;
             System.out.println(totalWage);
